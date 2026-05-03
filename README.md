@@ -59,12 +59,9 @@ curl -X POST http://localhost:8000/recognize \
 
 ## GitHub Actions 自动构建
 
-推送到 `main` 分支或打 tag 即自动构建并推送镜像到 Docker Hub。
+推送到 `master` 分支或打 tag 即自动构建并推送镜像到 GitHub Container Registry (ghcr.io)。
 
-需要在仓库 Settings → Secrets 中配置：
-
-- `DOCKERHUB_USERNAME` — Docker Hub 用户名
-- `DOCKERHUB_TOKEN` — Docker Hub Access Token
+无需额外配置，使用内置的 `GITHUB_TOKEN` 自动认证。
 
 ## 目录结构
 
