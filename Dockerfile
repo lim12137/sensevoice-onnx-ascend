@@ -7,7 +7,7 @@ FROM python:3.10-slim
 # 只复制 CANN toolkit（driver 由宿主机运行时挂载）
 COPY --from=cann-extract /usr/local/Ascend/ascend-toolkit /usr/local/Ascend/ascend-toolkit
 
-ENV LD_LIBRARY_PATH=/usr/local/Ascend/ascend-toolkit/latest/lib64:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH=/usr/local/Ascend/ascend-toolkit/latest/lib64
 ENV ASCEND_HOME_PATH=/usr/local/Ascend/ascend-toolkit/latest
 
 WORKDIR /app
