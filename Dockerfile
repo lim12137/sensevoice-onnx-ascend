@@ -1,4 +1,4 @@
-FROM ascendhub.huawei.com/public-ascend-hub/ascend-pytorch:24.0.RC1-A2-2.1.0-py3.10
+FROM python:3.10-slim
 
 WORKDIR /app
 
